@@ -30,7 +30,6 @@ string remove_spaces(const string &str) {
 }
 
 // Main function
-<<<<<<< HEAD
 int main(int argc , char *argv[]) {
 	string search_query = "terrorist attack in india";
   	if(argc > 1){
@@ -42,11 +41,6 @@ int main(int argc , char *argv[]) {
 	}
 
 	string formatted_query = replace_spaces_with_plus(search_query);
-=======
-int main() {
-    string search_query = "search keyword";
-  string formatted_query = replace_spaces_with_plus(search_query);
->>>>>>> refs/remotes/origin/master
   vector<pair<string, string>> search_results =
       scrape_duckduckgo(formatted_query);
 
