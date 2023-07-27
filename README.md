@@ -1,4 +1,4 @@
-# Web Scraper with Sentiment Analysis Readme
+# Web Scraper with Sentiment Analysis 
 
 This project is a C++ web scraper that fetches search results from DuckDuckGo and performs sentiment analysis on the content of each website. It uses libcurl for web requests, libxml2 for HTML parsing, cpr for HTTP requests, and jsoncpp for JSON handling.
 
