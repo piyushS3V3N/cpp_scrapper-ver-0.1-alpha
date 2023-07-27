@@ -1,5 +1,6 @@
 # Web Scraper with Sentiment Analysis 
-[![CMake](https://github.com/piyushS3V3N/cpp_scrapper-ver-0.1-alpha/actions/workflows/cmake.yml/badge.svg)](https://github.com/piyushS3V3N/cpp_scrapper-ver-0.1-alpha/actions/workflows/cmake.yml)[![CMake](https://github.com/piyushS3V3N/cpp_scrapper-ver-0.1-alpha/actions/workflows/cmake.yml/badge.svg)](https://github.com/piyushS3V3N/cpp_scrapper-ver-0.1-alpha/actions/workflows/cmake.yml)
+[![CMake](https://github.com/piyushS3V3N/cpp_scrapper-ver-0.1-alpha/actions/workflows/cmake.yml/badge.svg)](https://github.com/piyushS3V3N/cpp_scrapper-ver-0.1-alpha/actions/workflows/cmake.yml)
+
 This project is a C++ web scraper that fetches search results from DuckDuckGo and performs sentiment analysis on the content of each website. It uses libcurl for web requests, libxml2 for HTML parsing, cpr for HTTP requests, and jsoncpp for JSON handling.
 
 ## Prerequisites
