@@ -31,7 +31,7 @@ string remove_spaces(const string &str) {
 
 // Main function
 int main(int argc , char *argv[]) {
-	string search_query = "terrorist attack in india";
+	string search_query = "keyword";
   	if(argc > 1){
 		search_query = argv[1];	
 	}
