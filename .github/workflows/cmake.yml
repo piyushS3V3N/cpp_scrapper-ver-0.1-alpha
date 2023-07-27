@@ -20,7 +20,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Install Dependencies
-      run : apt install libcurl4-openssl-dev libxml2-dev pkg-config
+      run : sudo apt install libcurl4-openssl-dev libxml2-dev pkg-config
 
 
     - name: Configure CMake
