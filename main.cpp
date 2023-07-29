@@ -47,8 +47,8 @@ int main(int argc , char *argv[]) {
   if (!search_results.empty()) {
     for (size_t idx = 0; idx < search_results.size(); ++idx) {
       const auto &[title, url] = search_results[idx];
-      cout << idx + 1 << ". " << title << endl;
-      cout << "   URL: " << remove_spaces(url) << endl;
+      cout << "\033[33m" << idx + 1 << ". " << title <<"\033[0m" << endl;
+      cout << "   URL: \033[44m" << remove_spaces(url)<<"\033[00m" << endl;
       string url_cleaned = remove_spaces(url);
       // Fetch the content of the web page using libcurl
       string page_content = fetch_web_page_content(url_cleaned);
