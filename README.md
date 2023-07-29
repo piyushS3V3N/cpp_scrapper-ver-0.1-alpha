@@ -34,7 +34,7 @@ Follow the steps below to build the project:
 
 1. Clone the project repository:
    ```bash
-   git clone https://github.com/your_username/web-scraper.git
+   git clone https://github.com/piyushS3V3N/cpp_scrapper-ver-0.1-alpha.git
    cd web-scraper
    ```
 
