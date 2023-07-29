@@ -48,7 +48,7 @@ int main(int argc , char *argv[]) {
     for (size_t idx = 0; idx < search_results.size(); ++idx) {
       const auto &[title, url] = search_results[idx];
       cout << "\033[33m" << idx + 1 << ". " << title <<"\033[0m" << endl;
-      cout << "   URL: \033[44m" << remove_spaces(url)<<"\033[00m" << endl;
+      cout << "   \033[36mURL:\033[0m \033[44m" << remove_spaces(url)<<"\033[00m" << endl;
       string url_cleaned = remove_spaces(url);
       // Fetch the content of the web page using libcurl
       string page_content = fetch_web_page_content(url_cleaned);
@@ -60,11 +60,11 @@ int main(int argc , char *argv[]) {
 	std::optional <double> sentiment_score = analyze_sentiment(text_content);
 	//std::optional<double>  sentiment_score;
 	if (sentiment_score.has_value()) {
-            cout << "   Sentiment Score: " << sentiment_score.value() << endl;
+            cout << "   \033[36mSentiment Score:\033[0m " << sentiment_score.value() << endl;
 
             // Classify the website based on sentiment score (dummy implementation)
-            string classification = sentiment_score.value() >= 0.0 ? "Positive" : "Negative";
-            cout << "   Website Classification: " << classification << endl;
+            string classification = sentiment_score.value() >= 0.0 ? "\033[32mPositive\033[0m" : "\033[31mNegative\033[0m";
+            cout << "   \033[36mWebsite Classification:\033[0m " << classification << endl;
         } else {
             cerr << "Error: Sentiment analysis failed." << endl;
         }
