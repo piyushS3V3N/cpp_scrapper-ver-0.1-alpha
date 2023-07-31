@@ -11,7 +11,7 @@ Before you can build and run the web scraper, you need to have the following lib
 
 ```bash
 sudo apt update
-sudo apt install libcurl4-openssl-dev libxml2-dev pkg-config
+sudo apt install libcurl4-openssl-dev nlohmann-json3-dev libjsoncpp-dev libxml2-dev pkg-config
 ```
 
 ### Arch Linux
