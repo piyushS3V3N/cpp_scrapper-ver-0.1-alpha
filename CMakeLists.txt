@@ -20,16 +20,16 @@ find_package(CURL REQUIRED)
 find_package(LibXml2 REQUIRED)
 
 # Add the executable for the main program
-add_executable(main main.cpp)
+add_executable(cscrape main.cpp)
 
 # Include directories for the main program
-target_include_directories(main PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+target_include_directories(cscrape PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 
 # Link the required libraries
-target_link_libraries(main PRIVATE ${CURL_LIBRARIES} ${LIBXML2_LIBRARIES} ${JSONCPP_LIBRARIES} cpr::cpr )
+target_link_libraries(cscrape PRIVATE ${CURL_LIBRARIES} ${LIBXML2_LIBRARIES} ${JSONCPP_LIBRARIES} cpr::cpr )
 
 # Define the include directories for header files
-target_include_directories(main PRIVATE ${CURL_INCLUDE_DIRS} ${LIBXML2_INCLUDE_DIRS} ${JSONCPP_INCLUDE_DIRS})
+target_include_directories(cscrape PRIVATE ${CURL_INCLUDE_DIRS} ${LIBXML2_INCLUDE_DIRS} ${JSONCPP_INCLUDE_DIRS})
 
 # Add the required subdirectories
 add_subdirectory(web_scraping)
@@ -37,4 +37,4 @@ add_subdirectory(html_parsing)
 add_subdirectory(sentiment_analysis)
 
 # Link the modules to the main executable
-target_link_libraries(main PRIVATE web_scraping html_parsing sentiment_analysis )
+target_link_libraries(cscrape PRIVATE web_scraping html_parsing sentiment_analysis )
